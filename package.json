@@ -1,0 +1,32 @@
+{
+  "name": "j",
+  "private": true,
+  "version": "0.0.1",
+  "description": "The Knowt document format",
+  "main": "index.js",
+  "scripts": {
+    "format-test": "glob-run js-beautify -r test/\\*.js",
+    "format-js": "glob-run js-beautify -r js/\\*.js",
+    "format": "npm run format-js & npm run format-test",
+    "lint": "eslint js/",
+    "test": "istanbul cover --include-all-sources jasmine-node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/codogo/knowt-document.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/codogo/knowt-document#readme",
+  "dependencies": {
+    "deep-diff": "^0.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "format-js": "^1.0.0",
+    "glob-run": "^0.1.6",
+    "istanbul": "^0.4.4",
+    "jasmine-node": "^1.14.5",
+    "js-beautify": "^1.6.3"
+  }
+}
