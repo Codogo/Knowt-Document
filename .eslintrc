@@ -3,16 +3,22 @@
 	"sourceType": "module",
 	"env": {
 		"browser": true,
-		"node": true
+		"node": true,
+		"jasmine": true
 	},
+	"plugins":[
+		"jasmine"
+	],
 	"settings": {
 		"ecmascript": 6
 	},
 	"parserOptions": {
+		"ecmaVersion": 6,
 		"ecmaFeatures": {
-			"modules": true
+			"modules": true,
+			"impliedStrict": true
 		}
-	}
+	},
 	"rules": {
 		"strict": 0,
 		"quotes": 0,
