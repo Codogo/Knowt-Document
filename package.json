@@ -1,5 +1,5 @@
 {
-  "name": "j",
+  "name": "knowt-document",
   "private": true,
   "version": "0.0.1",
   "description": "The Knowt document format",
@@ -19,7 +19,8 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/codogo/knowt-document#readme",
   "dependencies": {
-    "deep-diff": "^0.3.4"
+    "deep-diff": "^0.3.4",
+    "js-base64": "^2.1.9"
   },
   "devDependencies": {
     "eslint": "^2.13.1",
