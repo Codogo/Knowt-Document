@@ -9,6 +9,7 @@
     "format-js": "glob-run js-beautify -r js/\\*.js",
     "format": "npm run format-js & npm run format-test",
     "lint": "eslint js/ test/",
+    "watch-test": "watch \"npm run test\" js test",
     "test": "istanbul cover --include-all-sources jasmine-node test"
   },
   "repository": {
@@ -29,6 +30,7 @@
     "glob-run": "^0.1.6",
     "istanbul": "^0.4.4",
     "jasmine-node": "^1.14.5",
-    "js-beautify": "^1.6.3"
+    "js-beautify": "^1.6.3",
+    "watch": "^0.19.1"
   }
 }
