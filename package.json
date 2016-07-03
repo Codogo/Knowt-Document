@@ -1,6 +1,5 @@
 {
   "name": "knowt-document",
-  "private": true,
   "description": "The Knowt document format",
   "main": "index.js",
   "scripts": {

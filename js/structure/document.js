@@ -1,6 +1,7 @@
 var KnowtModule = require("./module");
 var IDGen = require("../lib/idGen.js");
 var Clone = require("../lib/clone.js");
+var ExampleStructured = require("../example/fullDocument.js");
 
 class KnowtDocument{
 	constructor(){
@@ -9,6 +10,10 @@ class KnowtDocument{
 		this.contents = [
 			new KnowtModule("header", 1, "")
 		]
+	}
+
+	static Example(){
+		return KnowtDocument.FromStructured(ExampleStructured);
 	}
 
 	flattenContents(structContents, depth){
