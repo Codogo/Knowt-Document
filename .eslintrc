@@ -3,21 +3,26 @@
 	"sourceType": "module",
 	"env": {
 		"browser": true,
-		"node": true
+		"node": true,
+		"jasmine": true
 	},
 	"settings": {
 		"ecmascript": 6
 	},
 	"parserOptions": {
+		"ecmaVersion": 6,
 		"ecmaFeatures": {
-			"modules": true
+			"modules": true,
+			"impliedStrict": true
 		}
-	}
+	},
 	"rules": {
 		"strict": 0,
+		"no-console": 0,
 		"quotes": 0,
 		"no-unused-vars": 0,
 		"camelcase": 0,
-		"no-underscore-dangle": 0
+		"no-underscore-dangle": 0,
+		"no-comma-dangle": 0
 	}
 }
