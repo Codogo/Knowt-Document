@@ -7,7 +7,7 @@ class KnowtDocument{
 		this.id = IDGen();
 		this.title = "Untitled Knowt Document";
 		this.contents = [
-			new KnowtModule("header", 1, "")
+			new KnowtModule("body", 1, "")
 		]
 	}
 
