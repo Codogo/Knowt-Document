@@ -28,7 +28,7 @@ describe("A Document", function(){
 
 	it("Has Default Modules", function(){
 		expect(kd1.contents.length).toEqual(1);
-		expect(kd1.contents[0].type).toEqual("header");
+		expect(kd1.contents[0].type).toEqual("body");
 		expect(kd1.contents[0].content).toEqual("");
 	});
 
