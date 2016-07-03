@@ -1,6 +1,5 @@
 {
   "name": "knowt-document",
-  "private": true,
   "version": "0.0.1",
   "description": "The Knowt document format",
   "main": "index.js",
@@ -14,14 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/codogo/knowt-document.git"
+    "url": "https://github.com/Codogo/Knowt-Document.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/codogo/knowt-document#readme",
+  "homepage": "https://github.com/Codogo/Knowt-Document/blob/master/README.md",
   "dependencies": {
     "deep-diff": "^0.3.4",
-    "js-base64": "^2.1.9"
   },
   "devDependencies": {
     "eslint": "^2.13.1",
