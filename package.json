@@ -17,7 +17,6 @@
     "url": "https://bitbucket.org/codogo/knowt-document.git"
   },
   "release": {
-    "debug": true, 
     "verifyRelease": {
       "path": "cracks",
       "paths": ["test", "package.json"],
