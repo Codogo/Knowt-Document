@@ -1,7 +1,6 @@
 {
   "name": "knowt-document",
   "private": true,
-  "version": "0.0.1",
   "description": "The Knowt document format",
   "main": "index.js",
   "scripts": {
@@ -10,11 +9,20 @@
     "format": "npm run format-js & npm run format-test",
     "lint": "eslint js/ test/",
     "watch-test": "watch \"npm run test\" js test",
-    "test": "istanbul cover --include-all-sources jasmine-node test"
+    "test": "istanbul cover --include-all-sources jasmine-node test",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/codogo/knowt-document.git"
+    "url": "https://bitbucket.org/codogo/knowt-document.git"
+  },
+  "release": {
+    "debug": true, 
+    "verifyRelease": {
+      "path": "cracks",
+      "paths": ["test", "package.json"],
+      "silent": true
+    }
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +32,7 @@
     "js-base64": "^2.1.9"
   },
   "devDependencies": {
+    "cracks": "^3.1.2",
     "eslint": "^2.13.1",
     "eslint-plugin-jasmine": "^1.8.1",
     "format-js": "^1.0.0",
@@ -31,6 +40,7 @@
     "istanbul": "^0.4.4",
     "jasmine-node": "^1.14.5",
     "js-beautify": "^1.6.3",
+    "semantic-release": "^4.3.5",
     "watch": "^0.19.1"
   }
 }
