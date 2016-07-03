@@ -16,11 +16,14 @@
     "url": "https://github.com/Codogo/Knowt-Document.git"
   },
   "release": {
-    "debug": true, 
     "verifyRelease": {
       "path": "cracks",
       "paths": ["test", "package.json"],
       "silent": true
+    },
+      "verifyConditions": {
+      "path": "./test/justRun.js",
+      "additional": "config"
     }
   },
   "author": "",
