@@ -16,6 +16,7 @@
     "url": "https://github.com/Codogo/Knowt-Document.git"
   },
   "release": {
+    "debug": false,
     "verifyRelease": {
       "path": "cracks",
       "paths": ["test", "package.json"],
