@@ -1,3 +1,4 @@
 # Knowt
+[knowt](www.knowt.io) the Ideas Platform by [codogo](www.codogo.io).
 
-An example document can be produced by `KnowtDocument.example()`
+__More Documentation Coming Soon__
